@@ -155,6 +155,7 @@ services:
       CODE_MAX_STRING_ARRAY_LENGTH: 30
       CODE_MAX_OBJECT_ARRAY_LENGTH: 30
       CODE_MAX_NUMBER_ARRAY_LENGTH: 1000
+      UPLOAD_FILE_SIZE_LIMIT: 60
     depends_on:
       - db
       - redis
@@ -256,6 +257,7 @@ services:
       NOTION_CLIENT_SECRET: you-client-secret
       NOTION_CLIENT_ID: you-client-id
       NOTION_INTERNAL_SECRET: you-internal-secret
+      UPLOAD_FILE_SIZE_LIMIT: 60
     depends_on:
       - db
       - redis
